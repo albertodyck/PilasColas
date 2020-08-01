@@ -4,13 +4,13 @@ using System.Text;
 
 namespace Arreglos
 {
-    public class ArrayPilas
+    public class Pilas
     {
         private string[] array;
         private int max;
         private int tope;
         //constructor
-        public ArrayPilas(int tamanio)
+        public Pilas(int tamanio)
         {
             //this hace referencia a lo escrito dentro de la clase
             this.array = new string[tamanio];

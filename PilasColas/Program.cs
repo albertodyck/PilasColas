@@ -9,7 +9,7 @@ namespace PilasColas
         {
             try
             {
-                ArrayPilas pila = new ArrayPilas(5);
+                Pilas pila = new Pilas(5);
 
                 pila.Agregar("cero");
                 Console.WriteLine(pila.Imprimir());
