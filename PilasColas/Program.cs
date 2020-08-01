@@ -7,8 +7,9 @@ namespace PilasColas
     {
         static void Main(string[] args)
         {
-            Colas();
-
+            //Pilas();
+            //Colas();
+            ColasCirculares();
         }
 
         static void Pilas()
@@ -112,6 +113,59 @@ namespace PilasColas
                 Console.WriteLine("---------");
                 colas.Eliminar();
                 Console.WriteLine(colas.Imprimir());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        static void ColasCirculares()
+        {
+            try
+            {
+                ColasCirculares colasCirculares = new ColasCirculares(5);
+
+                Console.WriteLine(colasCirculares.Imprimir());
+
+                colasCirculares.Agregar("cero");
+                Console.WriteLine(colasCirculares.Imprimir());
+
+                Console.WriteLine("---------");
+                colasCirculares.Agregar("uno");
+                Console.WriteLine(colasCirculares.Imprimir());
+
+                Console.WriteLine("---------");
+                colasCirculares.Agregar("dos");
+                Console.WriteLine(colasCirculares.Imprimir());
+
+                Console.WriteLine("---------");
+                colasCirculares.Agregar("tres");
+                Console.WriteLine(colasCirculares.Imprimir());
+
+                Console.WriteLine("---------");
+                colasCirculares.Agregar("cuatro");
+                Console.WriteLine(colasCirculares.Imprimir());
+
+                Console.WriteLine("---------");
+                colasCirculares.Eliminar();
+                Console.WriteLine(colasCirculares.Imprimir());
+
+                Console.WriteLine("---------");
+                colasCirculares.Eliminar();
+                Console.WriteLine(colasCirculares.Imprimir());
+
+                Console.WriteLine("---------");
+                colasCirculares.Eliminar();
+                Console.WriteLine(colasCirculares.Imprimir());
+
+                Console.WriteLine("---------");
+                colasCirculares.Eliminar();
+                Console.WriteLine(colasCirculares.Imprimir());
+
+                Console.WriteLine("---------");
+                colasCirculares.Eliminar();
+                Console.WriteLine(colasCirculares.Imprimir());
             }
             catch (Exception ex)
             {
