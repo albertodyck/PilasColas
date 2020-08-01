@@ -9,7 +9,8 @@ namespace PilasColas
         {
             //Pilas();
             //Colas();
-            ColasCirculares();
+            //ColasCirculares();
+            ColasDobles();
         }
 
         static void Pilas()
@@ -166,6 +167,39 @@ namespace PilasColas
                 Console.WriteLine("---------");
                 colasCirculares.Eliminar();
                 Console.WriteLine(colasCirculares.Imprimir());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        static void ColasDobles()
+        {
+            try
+            {
+                ColasDobles colasdobles = new ColasDobles(5);
+
+                Console.WriteLine(colasdobles.Imprimir());
+
+                colasdobles.AgregarInicio("cero");
+                Console.WriteLine(colasdobles.Imprimir());
+
+                colasdobles.AgregarFinal("cinco");
+                Console.WriteLine(colasdobles.Imprimir());
+
+                colasdobles.AgregarInicio("uno");
+                Console.WriteLine(colasdobles.Imprimir());
+
+                colasdobles.AgregarFinal("cuatro");
+                Console.WriteLine(colasdobles.Imprimir());
+
+                colasdobles.EliminarFinal();
+                Console.WriteLine(colasdobles.Imprimir());
+
+                colasdobles.EliminarInicio();
+                Console.WriteLine(colasdobles.Imprimir());
+
             }
             catch (Exception ex)
             {
