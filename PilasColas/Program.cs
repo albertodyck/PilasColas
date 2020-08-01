@@ -7,6 +7,12 @@ namespace PilasColas
     {
         static void Main(string[] args)
         {
+            Colas();
+
+        }
+
+        static void Pilas()
+        {
             try
             {
                 Pilas pila = new Pilas(5);
@@ -58,7 +64,59 @@ namespace PilasColas
             {
                 Console.WriteLine(ex.Message);
             }
+        }
 
+        static void Colas()
+        {
+            try
+            {
+                Colas colas = new Colas(5);
+
+                Console.WriteLine(colas.Imprimir());
+
+                colas.Agregar("cero");
+                Console.WriteLine(colas.Imprimir());
+
+                Console.WriteLine("---------");
+                colas.Agregar("uno");
+                Console.WriteLine(colas.Imprimir());
+
+                Console.WriteLine("---------");
+                colas.Agregar("dos");
+                Console.WriteLine(colas.Imprimir());
+
+                Console.WriteLine("---------");
+                colas.Agregar("tres");
+                Console.WriteLine(colas.Imprimir());
+
+                Console.WriteLine("---------");
+                colas.Agregar("cuatro");
+                Console.WriteLine(colas.Imprimir());
+
+                Console.WriteLine("---------");
+                colas.Eliminar();
+                Console.WriteLine(colas.Imprimir());
+
+                Console.WriteLine("---------");
+                colas.Eliminar();
+                Console.WriteLine(colas.Imprimir());
+
+                Console.WriteLine("---------");
+                colas.Eliminar();
+                Console.WriteLine(colas.Imprimir());
+
+                Console.WriteLine("---------");
+                colas.Eliminar();
+                Console.WriteLine(colas.Imprimir());
+
+                Console.WriteLine("---------");
+                colas.Eliminar();
+                Console.WriteLine(colas.Imprimir());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }
