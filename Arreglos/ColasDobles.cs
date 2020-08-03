@@ -90,7 +90,7 @@ namespace Arreglos
             {
                 throw new Exception("Arreglo Vacio");
             }
-            array[inicio] = null;
+            array[inicio-1] = null;
             inicio--;
             //if (inicio==final)
             //{

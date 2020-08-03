@@ -185,13 +185,13 @@ namespace PilasColas
                 colasdobles.AgregarInicio("cero");
                 Console.WriteLine(colasdobles.Imprimir());
 
-                colasdobles.AgregarFinal("cinco");
+                colasdobles.AgregarFinal("cuatro");
                 Console.WriteLine(colasdobles.Imprimir());
 
                 colasdobles.AgregarInicio("uno");
                 Console.WriteLine(colasdobles.Imprimir());
 
-                colasdobles.AgregarFinal("cuatro");
+                colasdobles.AgregarFinal("tres");
                 Console.WriteLine(colasdobles.Imprimir());
 
                 colasdobles.EliminarFinal();
