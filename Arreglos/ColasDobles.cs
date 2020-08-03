@@ -92,14 +92,14 @@ namespace Arreglos
             }
             array[inicio-1] = null;
             inicio--;
-            //if (inicio==final)
-            //{
-            //    inicio = final = 0;
-            //}
-            //else if (final == max - 1)
-            //{
-            //    final = 0;
-            //}
+            if (inicio == final)
+            {
+                inicio = final = 0;
+            }
+            else if (final == max - 1)
+            {
+                final = 0;
+            }
 
         }
 
