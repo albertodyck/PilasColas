@@ -8,14 +8,16 @@ namespace PilasColas
     {
         static void Main(string[] args)
         {
-            //Pilas();
-            //Colas();
-            //ColasCirculares();
-            //ColasDobles();
-            ListaPilas();
+            //ArregloPilas();
+            //ArregloColas();
+            //ArregloColasCirculares();
+            //ArregloColasDobles();
+            //ListaPilas();
+            ListasColas();
+
         }
 
-        static void Pilas()
+        static void ArregloPilas()
         {
             try
             {
@@ -70,11 +72,11 @@ namespace PilasColas
             }
         }
 
-        static void Colas()
+        static void ArregloColas()
         {
             try
             {
-                Colas colas = new Colas(5);
+                Arreglos.Colas colas = new Arreglos.Colas(5);
 
                 Console.WriteLine(colas.Imprimir());
 
@@ -123,7 +125,7 @@ namespace PilasColas
             }
         }
 
-        static void ColasCirculares()
+        static void ArregloColasCirculares()
         {
             try
             {
@@ -176,7 +178,7 @@ namespace PilasColas
             }
         }
 
-        static void ColasDobles()
+        static void ArregloColasDobles()
         {
             try
             {
@@ -263,6 +265,59 @@ namespace PilasColas
                 Console.WriteLine(ex.Message);
             }
 
+        }
+
+        static void ListasColas()
+        {
+            try
+            {
+                Listas.Colas colas = new Listas.Colas();
+
+                Console.WriteLine(colas.Imprimir());
+
+                colas.Agregar("cero");
+                Console.WriteLine(colas.Imprimir());
+
+                Console.WriteLine("---------");
+                colas.Agregar("uno");
+                Console.WriteLine(colas.Imprimir());
+
+                Console.WriteLine("---------");
+                colas.Agregar("dos");
+                Console.WriteLine(colas.Imprimir());
+
+                Console.WriteLine("---------");
+                colas.Agregar("tres");
+                Console.WriteLine(colas.Imprimir());
+
+                Console.WriteLine("---------");
+                colas.Agregar("cuatro");
+                Console.WriteLine(colas.Imprimir());
+
+                Console.WriteLine("---------");
+                colas.Eliminar();
+                Console.WriteLine(colas.Imprimir());
+
+                Console.WriteLine("---------");
+                colas.Eliminar();
+                Console.WriteLine(colas.Imprimir());
+
+                Console.WriteLine("---------");
+                colas.Eliminar();
+                Console.WriteLine(colas.Imprimir());
+
+                Console.WriteLine("---------");
+                colas.Eliminar();
+                Console.WriteLine(colas.Imprimir());
+
+                Console.WriteLine("---------");
+                colas.Eliminar();
+                Console.WriteLine(colas.Imprimir());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }
