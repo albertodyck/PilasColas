@@ -14,7 +14,8 @@ namespace PilasColas
             //ArregloColasDobles();
             //ListaPilas();
             //ListasColas();
-            ListasColasCirculares();
+            //ListasColasCirculares();
+            ListasColasDobles();
 
         }
 
@@ -373,5 +374,57 @@ namespace PilasColas
                 Console.WriteLine(ex.Message);
             }
         }
+
+        static void ListasColasDobles()
+        {
+            try
+            {
+                Listas.ColasDobles colasDobles = new Listas.ColasDobles();
+
+                colasDobles.AgregarInicio("tres");
+                Console.WriteLine(colasDobles.Imprimir());
+
+                Console.WriteLine("---------");
+                colasDobles.AgregarFinal("cuatro");
+                Console.WriteLine(colasDobles.Imprimir());
+
+                Console.WriteLine("---------");
+                colasDobles.AgregarInicio("dos");
+                Console.WriteLine(colasDobles.Imprimir());
+
+                Console.WriteLine("---------");
+                colasDobles.AgregarFinal("cinco");
+                Console.WriteLine(colasDobles.Imprimir());
+
+                Console.WriteLine("---------");
+                colasDobles.AgregarInicio("uno");
+                Console.WriteLine(colasDobles.Imprimir());
+
+                Console.WriteLine("---------");
+                colasDobles.EliminarInicio();
+                Console.WriteLine(colasDobles.Imprimir());
+
+                Console.WriteLine("---------");
+                colasDobles.EliminarFinal();
+                Console.WriteLine(colasDobles.Imprimir());
+
+                Console.WriteLine("---------");
+                colasDobles.EliminarInicio();
+                Console.WriteLine(colasDobles.Imprimir());
+
+                Console.WriteLine("---------");
+                colasDobles.EliminarFinal();
+                Console.WriteLine(colasDobles.Imprimir());
+
+                Console.WriteLine("---------");
+                colasDobles.EliminarInicio();
+                Console.WriteLine(colasDobles.Imprimir());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
     }
 }
